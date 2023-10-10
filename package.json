@@ -1,0 +1,40 @@
+{
+  "name": "wing-viewport",
+  "version": "0.0.1`",
+  "description": "a utility tool for viewport",
+  "main": "dist/wing-viewport.es.js",
+  "bin": {
+    "wing-viewport": "dist/wing-viewport.es.js"
+  },
+  "module": "dist/wing-viewport.es.js",
+  "unpkg": "dist/wing-viewport.js",
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wayley/wing-viewport.git"
+  },
+  "keywords": [
+    "postmessage",
+    "window"
+  ],
+  "author": {
+    "name": "Robben Wayley",
+    "email": "hb_wangzheng@163.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wayley/wing-viewport/issues"
+  },
+  "homepage": "https://github.com/Wayley/wing-viewport#readme",
+  "devDependencies": {
+    "rollup": "^2.34.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
