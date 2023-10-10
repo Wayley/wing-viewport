@@ -1,6 +1,6 @@
 {
   "name": "wing-viewport",
-  "version": "0.0.1`",
+  "version": "0.0.1",
   "description": "a utility tool for viewport",
   "main": "dist/wing-viewport.es.js",
   "bin": {
@@ -21,12 +21,12 @@
     "url": "git+https://github.com/Wayley/wing-viewport.git"
   },
   "keywords": [
-    "postmessage",
+    "viewport",
     "window"
   ],
   "author": {
-    "name": "Robben Wayley",
-    "email": "hb_wangzheng@163.com"
+    "name": "Robben Wadlay",
+    "email": "robbenwadlay@163.com"
   },
   "license": "MIT",
   "bugs": {
