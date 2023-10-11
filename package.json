@@ -2,10 +2,12 @@
   "name": "wing-viewport",
   "version": "0.0.1",
   "description": "a utility tool for viewport",
+  "keywords": [
+    "viewport",
+    "window"
+  ],
   "main": "dist/wing-viewport.es.js",
-  "bin": {
-    "wing-viewport": "dist/wing-viewport.es.js"
-  },
+  "types": "dist/wing-viewport.d.ts",
   "module": "dist/wing-viewport.es.js",
   "unpkg": "dist/wing-viewport.js",
   "files": [
@@ -14,16 +16,15 @@
     "es"
   ],
   "scripts": {
-    "build": "rollup --config"
+    "build": "run-s build-dts build-ts build-rollup",
+    "build-ts": "tsc",
+    "build-dts": "rollup -c rollup.dts.config.js",
+    "build-rollup": "rollup -c rollup.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Wayley/wing-viewport.git"
   },
-  "keywords": [
-    "viewport",
-    "window"
-  ],
   "author": {
     "name": "Robben Wadlay",
     "email": "robbenwadlay@163.com"
@@ -34,7 +35,11 @@
   },
   "homepage": "https://github.com/Wayley/wing-viewport#readme",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.5",
+    "npm-run-all": "^4.1.5",
     "rollup": "^2.34.2",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^5.2.2"
   }
 }
