@@ -1,19 +1,17 @@
 {
   "name": "wing-viewport",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a utility tool for viewport",
   "keywords": [
     "viewport",
     "window"
   ],
-  "main": "dist/wing-viewport.es.js",
   "types": "dist/wing-viewport.d.ts",
+  "main": "dist/wing-viewport.es.js",
   "module": "dist/wing-viewport.es.js",
   "unpkg": "dist/wing-viewport.js",
   "files": [
-    "dist",
-    "lib",
-    "es"
+    "dist"
   ],
   "scripts": {
     "build": "run-s build-dts build-ts build-rollup",
